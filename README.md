@@ -1,5 +1,9 @@
 # Help Pilot
 
+## It ticketing system
+
+- tech stack : NextJs, Tailwind CSS, Prisma ORM
+
 ## Getting Started
 
 First, run the development server:
