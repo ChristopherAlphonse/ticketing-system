@@ -1,8 +1,15 @@
 # Help Pilot
 
-## It ticketing system
+## IT ticketing system
 
-- tech stack : NextJs, Tailwind CSS, Prisma ORM
+- Tech stack : NextJs, Tailwind CSS, Prisma ORM, MYSQL Database
+
+## Recommended: Tools
+
+- Download [MysQL](https://dev.mysql.com/downloads/mysql/)
+- Download [DataGrip](https://www.jetbrains.com/datagrip/)
+- Download [Vs Code IDE](https://code.visualstudio.com/)
+- Download [Git](https://git-scm.com/)
 
 ## Getting Started
 
