@@ -1,11 +1,17 @@
-import "./globals.css"
+import "./css/globals.css"
 
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
+import { Analytics } from "@vercel/analytics/react"
 
-import NavBar from "./NavBar"
+import NavBar from "./component/NavBar"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "HelpPilot",
@@ -19,10 +25,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${inter.variable} font-inter antialiased tracking-tight`}
+    >
       <body className={inter.className}>
-        <NavBar />
-        <main>{children}</main>
+        <Analytics />
+
+        <main className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <NavBar />
+          {children}
+        </main>
       </body>
     </html>
   )
