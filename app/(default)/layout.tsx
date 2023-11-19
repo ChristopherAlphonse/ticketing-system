@@ -1,5 +1,7 @@
 "use client"
 
+import Footer from "../component/footer"
+
 export default function DefaultLayout({
   children,
 }: {
@@ -8,6 +10,7 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">{children}</main>
+      <Footer />
     </>
   )
 }
