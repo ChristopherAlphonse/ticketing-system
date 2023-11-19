@@ -18,3 +18,5 @@ export async function POST(req: NextRequest) {
   })
   return NextResponse.json(issue, { status: 201 })
 }
+
+export type Issues = z.infer<typeof createIssueSchema>

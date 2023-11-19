@@ -1,0 +1,4 @@
+.radix-themes {
+  --default-font-size: 16px;
+  --default-font-family: var(--font-inter);
+}

@@ -1,16 +1,15 @@
 import "./css/globals.css"
 import "@radix-ui/themes/styles.css"
+import "./css/theme-config.css"
 
 import type { Metadata } from "next"
-import { Roboto } from "next/font/google"
-import { Theme, ThemePanel } from "@radix-ui/themes"
+import { Inter } from "next/font/google"
+import { Theme } from "@radix-ui/themes"
 import { Analytics } from "@vercel/analytics/react"
 
 import NavBar from "./component/NavBar"
 
-const inter = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
@@ -33,10 +32,17 @@ export default function RootLayout({
       className={`${inter.variable} font-roboto antialiased tracking-tight`}
     >
       <body className={inter.className}>
-        <Theme appearance="dark">
+        <Theme
+          appearance="dark"
+          accentColor="iris"
+          radius="large"
+          scaling="90%"
+        >
           <Analytics />
 
-          <main className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip  bg-black text-white">
+          <main
+            className={`${inter.variable}font-inter flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip  bg-black text-white`}
+          >
             <NavBar />
             {children}
           </main>
