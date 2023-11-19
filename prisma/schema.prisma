@@ -1,0 +1,10 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("NEXT_PUBLIC_DB_HOST")
+}
