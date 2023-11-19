@@ -25,7 +25,7 @@ const NavBar = () => {
         </div>
       </Link>
 
-      <ul className="flex space-x-6 items-center ">
+      <ul className=" flex items-center space-x-6 text-md font-medium">
         {links.map((list) => (
           <Link
             key={Math.random()}

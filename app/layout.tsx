@@ -1,18 +1,20 @@
 import "./css/globals.css"
+import "@radix-ui/themes/styles.css"
 
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import Script from "next/script"
+import { Roboto } from "next/font/google"
+import { Theme, ThemePanel } from "@radix-ui/themes"
 import { Analytics } from "@vercel/analytics/react"
 
 import NavBar from "./component/NavBar"
 
-const inter = Inter({
+const inter = Roboto({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 })
-
 export const metadata: Metadata = {
   title: "HelpPilot",
   description:
@@ -27,15 +29,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} font-inter antialiased tracking-tight`}
+      suppressHydrationWarning
+      className={`${inter.variable} font-roboto antialiased tracking-tight`}
     >
       <body className={inter.className}>
-        <Analytics />
+        <Theme appearance="dark">
+          <Analytics />
 
-        <main className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <NavBar />
-          {children}
-        </main>
+          <main className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip  bg-black text-white">
+            <NavBar />
+            {children}
+          </main>
+        </Theme>
       </body>
     </html>
   )
