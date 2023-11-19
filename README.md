@@ -1,47 +1,107 @@
-# Help Pilot - IN PROGRESS
+# Help Pilot - Read me file in working progress
 
-## WORK in progress official readme will be re-written once completed
+## Overview
 
-## IT ticketing system
+Help Pilot is an IT ticketing system designed to streamline issue resolution and support workflows. Leveraging modern technologies such as Next.js, Tailwind CSS, Prisma ORM, and MySQL database, it aims to provide a robust and efficient platform for managing IT support requests.
 
-- Tech stack : NextJs, Tailwind CSS, Prisma ORM, MYSQL Database
+Please note that this README is currently a work in progress, and the official version will be rewritten upon completion.
 
-## Recommended: Tools
+## Tech Stack
 
-- Download [MysQL](https://dev.mysql.com/downloads/mysql/)
-- Download [DataGrip](https://www.jetbrains.com/datagrip/)
-- Download [Vs Code IDE](https://code.visualstudio.com/)
-- Download [Git](https://git-scm.com/)
+- Next.js
+- Tailwind CSS
+- Prisma ORM
+- MySQL Database
+
+## Recommended Tools
+
+To facilitate seamless development and usage of Help Pilot, we recommend the following tools:
+
+- [MySQL](https://dev.mysql.com/downloads/mysql/)
+- [DataGrip](https://www.jetbrains.com/datagrip/)
+- [Vs Code IDE](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
 
 ## Getting Started
 
-First, run the development server:
+To get started with Help Pilot, follow these steps:
+
+1. Install dependencies:
 
 ```bash
-pnpm i && pnpm dev
-
+pnpm i
 ```
+
+Run the development server:
+
+```sh
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ## updating packages
 
-**_To upgrade all packages_**
+To upgrade all packages to their latest versions, use the following command:
 
 ```sh
 pnpm up-all
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Database Operations
 
-You can start editing the page by modifying `app/(default)`. The page auto-updates as you edit the file.
+####
 
+Push Database Changes
+
+Run the following commands to apply database changes:
+
+```sh
 npx prisma db push
+```
+
+#### Generate Prisma Client
+
+Generate the Prisma client to enable seamless interaction with the database:
+
+```sh
 npx prisma generate
+```
+
+#### Prisma Studio
+
+Launch Prisma Studio for a visual representation of the database:
+
+```sh
 npx prisma studio
+```
 
-to format:
+#### Formatting
+
+Use the following command to format Prisma schema files:
+
+```sh
 npx prisma format
+```
 
-Utilize: npx prisma studio if you want to access the database and do not want to install DataGrip
-you will will in the terminal `Prisma Studio is up on http://localhost:5555`
+#### Migration
 
-DB: My sql setup for [Prisma](https://www.prisma.io/docs/concepts/database-connectors/mysql)
+To create and apply database migrations, run
+
+```sh
+npx prisma migrate
+```
+
+The migration script will be created in the `prisma/migrations/migration.sql` folder.
+
+Database Access without DataGrip
+If you prefer not to install DataGrip, you can use Prisma Studio directly from the terminal:
+
+```sh
+npx prisma studio
+```
+
+Access Prisma Studio at http://localhost:5555 in your browser.
+
+MySQL Setup for Prisma
+For MySQL setup details with Prisma, refer to the [Prisma Documentation.](https://www.prisma.io/docs/concepts/database-connectors/mysql)
