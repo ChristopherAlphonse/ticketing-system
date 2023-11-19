@@ -18,14 +18,14 @@ const NavBar = () => {
     },
   ]
   return (
-    <nav className=" flex space-x-6 px-5 h-20 mb-4 items-center bg-transparent border-b border-zinc-900">
+    <nav className="sticky left-0 top-0 z-50 w-full flex space-x-6 px-5 h-20 mb-4 items-center bg-transparent border-b border-zinc-900 justify-between ">
       <Link href="/">
-        <div className="flex items-center text-xl font-bold transition-colors hover:text-zinc-400 ">
+        <div className="flex items-center text-xl font-bold transition-colors hover:text-zinc-400  ">
           HelpPilot <CgComponents size={30} className="ml-1" />
         </div>
       </Link>
 
-      <ul className="flex space-x-6">
+      <ul className="flex space-x-6 items-center ">
         {links.map((list) => (
           <Link
             key={Math.random()}
