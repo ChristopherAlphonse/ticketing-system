@@ -2,7 +2,13 @@
 
 ## Overview
 
-Help Pilot is an IT ticketing system designed to streamline issue resolution and support workflows. Leveraging modern technologies such as Next.js, Tailwind CSS, Prisma ORM, and MySQL database, it aims to provide a robust and efficient platform for managing IT support requests.
+## to-to:
+Dashboard
+CRUD operation
+Auth
+Admin/roles
+
+
 
 Please note that this README is currently a work in progress, and the official version will be rewritten upon completion.
 
