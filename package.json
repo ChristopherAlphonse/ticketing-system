@@ -4,11 +4,11 @@
   "private": false,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && prisma migrate",
     "start": "next start",
     "lint": "next lint  ",
     "format": "prettier . --write",
-    "up-all": "ncu - u && pnpm i",
+    "up-all": "ncu -u && pnpm i",
     "prisma-migrate": "npx prisma migrate dev",
     "prisma-format": " npx prisma format",
     "prisma-gen": "prisma generate"
