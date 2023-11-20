@@ -19,6 +19,7 @@ import { BiInfoCircle } from "react-icons/bi";
 import { SimpleMdeReact } from "react-simplemde-editor";
 import { z } from "zod";
 
+import ErrorMessage from "@/app/component/ErrorMessage";
 import { createIssueSchema } from "@/app/validationSchema";
 
 type IssueForm = z.infer<typeof createIssueSchema>;
@@ -73,11 +74,8 @@ export default function NewIssuePage() {
               className="text-2xl tracking-normal m-2 "
             />
           </TextFieldRoot>
-          {errors.title && (
-            <Text color="red" as="p">
-              {errors.title.message}
-            </Text>
-          )}
+
+          <ErrorMessage>{errors.title?.message}</ErrorMessage>
 
           <Controller
             name="description"
@@ -89,11 +87,7 @@ export default function NewIssuePage() {
             )}
           />
 
-          {errors.description && (
-            <Text color="red" as="p">
-              {errors.description.message}
-            </Text>
-          )}
+          <ErrorMessage>{errors.description?.message}</ErrorMessage>
 
           <button
             type="submit"
