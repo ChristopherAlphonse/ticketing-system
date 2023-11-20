@@ -2,11 +2,7 @@
 
 ## Overview
 
-## to-to:
-Dashboard,
-CRUD operation,
-Auth,
-Admin/roles
+## to-o:Dashboard, CRUD operation, Auth, Admin/roles
 
 
 
