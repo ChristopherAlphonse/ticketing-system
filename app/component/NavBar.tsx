@@ -1,29 +1,29 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { CgComponents } from "react-icons/cg"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { CgComponents } from "react-icons/cg";
 
 const NavBar = () => {
-  const current = usePathname()
-  const [isSticky, setIsSticky] = useState(false)
+  const current = usePathname();
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
-    const scrollY = window.scrollY
+    const scrollY = window.scrollY;
 
-    const stickyHeight = 120
+    const stickyHeight = 120;
 
-    setIsSticky(scrollY > stickyHeight)
-  }
+    setIsSticky(scrollY > stickyHeight);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const links = [
     {
@@ -34,7 +34,7 @@ const NavBar = () => {
       label: "Issues",
       href: "/issues",
     },
-  ]
+  ];
 
   return (
     <nav
@@ -62,7 +62,7 @@ const NavBar = () => {
         ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

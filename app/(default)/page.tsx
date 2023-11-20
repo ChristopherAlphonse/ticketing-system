@@ -1,4 +1,4 @@
-import Hero from "../component/hero"
+import Hero from "../component/hero";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
         <Hero />
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

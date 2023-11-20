@@ -7,7 +7,7 @@ const Hero = () => {
         </h1>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
