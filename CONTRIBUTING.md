@@ -4,6 +4,9 @@ To get started with Help Pilot, follow these steps:
 
 ### replace the information in the .env file and also create a .env.local and add the same information in.
 
+
+Before opening a new pull request, try searching through the (issue)[https://github.com/ChristopherAlphonse/ticketing-system/edit/master/issues] tracker for known issues or fixes.
+
 1. Install dependencies:
 
 ```bash
