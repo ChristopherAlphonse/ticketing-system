@@ -1,31 +1,30 @@
-"use client";
+'use client';
 
-import "../../../css/easymde.min.css";
+import '../../../css/easymde.min.css';
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import ErrorMessage from "@app/component/ErrorMessage";
-import { createIssueSchema } from "@app/validationSchema";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import ErrorMessage from '@app/component/ErrorMessage';
+import { createIssueSchema } from '@app/validationSchema';
+import { zodResolver } from '@hookform/resolvers/zod';
 import {
   CalloutIcon,
   CalloutRoot,
   CalloutText,
-  Text,
   TextFieldInput,
   TextFieldRoot,
-} from "@radix-ui/themes";
-import axios from "axios";
-import { Controller, useForm } from "react-hook-form";
-import { BiInfoCircle } from "react-icons/bi";
-import { SimpleMdeReact } from "react-simplemde-editor";
-import { z } from "zod";
+} from '@radix-ui/themes';
+import axios from 'axios';
+import { Controller, useForm } from 'react-hook-form';
+import { BiInfoCircle } from 'react-icons/bi';
+import { SimpleMdeReact } from 'react-simplemde-editor';
+import { z } from 'zod';
 
 type IssueForm = z.infer<typeof createIssueSchema>;
 
 export default function NewIssuePage() {
   const router = useRouter();
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const {
     register,
     control,
@@ -37,11 +36,11 @@ export default function NewIssuePage() {
 
   async function onSubmit(data: IssueForm) {
     try {
-      await axios.post("/api/issues", data);
-      router.push("/issues");
+      await axios.post('/api/issues', data);
+      router.push('/issues');
     } catch (error) {
-      console.error("Error:", error);
-      setError("unexpected error has occurred.");
+      console.error('Error:', error);
+      setError('unexpected error has occurred.');
     }
   }
 
@@ -61,12 +60,10 @@ export default function NewIssuePage() {
         className="flex min-h-screen h-screen w-full items-center justify-center "
       >
         <div className="relative flex flex-col rounded-xl border border-zinc-900 h-auto bg-clip-border text-gray-700 shadow-none w-96 md:w-[800px] space-y-3 mx-auto box-border p-4">
-          <p className="text-zinc-500 text-md">
-            {"  Please tell us the issues you've accounted "}
-          </p>
+          <p className="text-zinc-500 text-md">{"  Please tell us the issues you've accounted "}</p>
           <TextFieldRoot className="mb-9">
             <TextFieldInput
-              {...register("title")}
+              {...register('title')}
               variant="classic"
               size="3"
               placeholder="Title"
@@ -115,7 +112,7 @@ export default function NewIssuePage() {
                 Creating Ticket ...
               </div>
             ) : (
-              "Create new Ticket"
+              'Create new Ticket'
             )}
           </button>
         </div>

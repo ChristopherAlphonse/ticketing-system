@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
-import { createIssueSchema } from "@app/validationSchema";
-import prisma from "@prisma-file";
-import { z } from "zod";
+import { NextRequest, NextResponse } from 'next/server';
+import { createIssueSchema } from '@app/validationSchema';
+import prisma from '@prisma-file';
+import { z } from 'zod';
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -13,10 +13,6 @@ export async function POST(req: NextRequest) {
     data: { title: body.title, description: body.description },
   });
   return NextResponse.json(issue, { status: 201 });
-}
-
-export async function GET(req: NextRequest) {
-  return NextResponse.json(["hello world"], { status: 200 });
 }
 
 export type Issues = z.infer<typeof createIssueSchema>;

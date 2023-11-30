@@ -492,7 +492,7 @@ div.CodeMirror-dragcursors {
 }
 
 .cm-tab-wrap-hack:after {
-  content: "";
+  content: '';
 }
 
 span.CodeMirror-selectedtext {
@@ -655,7 +655,7 @@ span.CodeMirror-selectedtext {
 }
 
 .editor-toolbar button:after {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 65%;
   vertical-align: text-bottom;
   position: relative;
@@ -663,23 +663,23 @@ span.CodeMirror-selectedtext {
 }
 
 .editor-toolbar button.heading-1:after {
-  content: "1";
+  content: '1';
 }
 
 .editor-toolbar button.heading-2:after {
-  content: "2";
+  content: '2';
 }
 
 .editor-toolbar button.heading-3:after {
-  content: "3";
+  content: '3';
 }
 
 .editor-toolbar button.heading-bigger:after {
-  content: "▲";
+  content: '▲';
 }
 
 .editor-toolbar button.heading-smaller:after {
-  content: "▼";
+  content: '▼';
 }
 
 .editor-toolbar.disabled-for-preview button:not(.no-disable) {
@@ -711,15 +711,15 @@ span.CodeMirror-selectedtext {
 }
 
 .editor-statusbar .lines:before {
-  content: "lines: ";
+  content: 'lines: ';
 }
 
 .editor-statusbar .words:before {
-  content: "words: ";
+  content: 'words: ';
 }
 
 .editor-statusbar .characters:before {
-  content: "characters: ";
+  content: 'characters: ';
 }
 
 .editor-preview-full {
@@ -848,25 +848,13 @@ span.CodeMirror-selectedtext {
 
 .editor-toolbar .easymde-dropdown {
   position: relative;
-  background: linear-gradient(
-    to bottom right,
-    #fff 0,
-    #fff 84%,
-    #333 50%,
-    #333 100%
-  );
+  background: linear-gradient(to bottom right, #fff 0, #fff 84%, #333 50%, #333 100%);
   border-radius: 0;
   border: 1px solid #fff;
 }
 
 .editor-toolbar .easymde-dropdown:hover {
-  background: linear-gradient(
-    to bottom right,
-    #fff 0,
-    #fff 84%,
-    #333 50%,
-    #333 100%
-  );
+  background: linear-gradient(to bottom right, #fff 0, #fff 84%, #333 50%, #333 100%);
 }
 
 .easymde-dropdown-content {
@@ -891,7 +879,7 @@ span.CodeMirror-selectedtext {
 }
 
 span[data-img-src]::after {
-  content: "";
+  content: '';
   background-image: var(--bg-image);
   display: block;
   max-height: 100%;
@@ -903,8 +891,7 @@ span[data-img-src]::after {
   background-repeat: no-repeat;
 }
 
-.CodeMirror
-  .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+.CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
   background: rgba(246, 118, 118, 0.345);
   text-decoration: line-through;
 }
