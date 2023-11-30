@@ -4,6 +4,8 @@ import "../../../css/easymde.min.css";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import ErrorMessage from "@app/component/ErrorMessage";
+import { createIssueSchema } from "@app/validationSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   CalloutIcon,
@@ -18,9 +20,6 @@ import { Controller, useForm } from "react-hook-form";
 import { BiInfoCircle } from "react-icons/bi";
 import { SimpleMdeReact } from "react-simplemde-editor";
 import { z } from "zod";
-
-import ErrorMessage from "@/app/component/ErrorMessage";
-import { createIssueSchema } from "@/app/validationSchema";
 
 type IssueForm = z.infer<typeof createIssueSchema>;
 

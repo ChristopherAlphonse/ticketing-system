@@ -4,8 +4,6 @@
 
 ## to-Do:Dashboard, CRUD operation, Auth, Admin/roles
 
-
-
 Please note that this README is currently a work in progress, and the official version will be rewritten upon completion.
 
 ## Tech Stack
