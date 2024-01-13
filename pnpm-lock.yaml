@@ -54,8 +54,8 @@ dependencies:
     specifier: ^1.0.12
     version: 1.0.12(webpack@5.89.0)
   npm:
-    specifier: ^10.2.5
-    version: 10.2.5
+    specifier: ^10.3.0
+    version: 10.3.0
   npm-check-updates:
     specifier: ^16.14.12
     version: 16.14.12
@@ -69,8 +69,11 @@ dependencies:
     specifier: ^7.49.3
     version: 7.49.3(react@18.2.0)
   react-icons:
-    specifier: ^4.12.0
-    version: 4.12.0(react@18.2.0)
+    specifier: ^5.0.1
+    version: 5.0.1(react@18.2.0)
+  react-loading-skeleton:
+    specifier: ^3.3.1
+    version: 3.3.1(react@18.2.0)
   react-quill:
     specifier: ^2.0.0
     version: 2.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -84,7 +87,7 @@ dependencies:
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports':
     specifier: ^4.1.1
-    version: 4.1.1(prettier@3.1.1)
+    version: 4.1.1(prettier@3.2.1)
   '@types/node':
     specifier: ^20
     version: 20.10.6
@@ -116,17 +119,17 @@ devDependencies:
     specifier: ^8
     version: 8.4.31
   prettier:
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^3.2.1
+    version: 3.2.1
   prettier-plugin-css-order:
     specifier: ^2.0.1
-    version: 2.0.1(postcss@8.4.31)(prettier@3.1.1)
+    version: 2.0.1(postcss@8.4.31)(prettier@3.2.1)
   prettier-plugin-import-sort:
     specifier: ^0.0.7
-    version: 0.0.7(prettier@3.1.1)
+    version: 0.0.7(prettier@3.2.1)
   prettier-plugin-tailwindcss:
     specifier: ^0.5.11
-    version: 0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier-plugin-css-order@2.0.1)(prettier-plugin-import-sort@0.0.7)(prettier@3.1.1)
+    version: 0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier-plugin-css-order@2.0.1)(prettier-plugin-import-sort@0.0.7)(prettier@3.2.1)
   prisma:
     specifier: ^5.8.0
     version: 5.8.0
@@ -452,7 +455,7 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.1.1):
+  /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.2.1):
     resolution: {integrity: sha512-kJhXq63ngpTQ2dxgf5GasbPJWsJA3LgoOdd7WGhpUSzLgLgI4IsIzYkbJf9kmpOHe7Vdm/o3PcRA3jmizXUuAQ==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
@@ -466,7 +469,7 @@ packages:
       '@babel/parser': 7.23.3
       '@babel/traverse': 7.23.3
       '@babel/types': 7.23.3
-      prettier: 3.1.1
+      prettier: 3.2.1
       semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
@@ -6642,8 +6645,8 @@ packages:
       path-key: 2.0.1
     dev: false
 
-  /npm@10.2.5:
-    resolution: {integrity: sha512-lXdZ7titEN8CH5YJk9C/aYRU9JeDxQ4d8rwIIDsvH3SMjLjHTukB2CFstMiB30zXs4vCrPN2WH6cDq1yHBeJAw==}
+  /npm@10.3.0:
+    resolution: {integrity: sha512-9u5GFc1UqI2DLlGI7QdjkpIaBs3UhTtY8KoCqYJK24gV/j/tByaI4BA4R7RkOc+ASqZMzFPKt4Pj2Z8JcGo//A==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     dev: false
@@ -7229,7 +7232,7 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /prettier-plugin-css-order@2.0.1(postcss@8.4.31)(prettier@3.1.1):
+  /prettier-plugin-css-order@2.0.1(postcss@8.4.31)(prettier@3.2.1):
     resolution: {integrity: sha512-Y+wZ0wI7/qFUritirJksQn13KqbcNC3OZXSxGh1ui/X39hAeMW9md+Mp7fjk8H4ZQQ8c5CTYZxShoBfAal/79A==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -7238,12 +7241,12 @@ packages:
       css-declaration-sorter: 7.1.1(postcss@8.4.31)
       postcss-less: 6.0.0(postcss@8.4.31)
       postcss-scss: 4.0.9(postcss@8.4.31)
-      prettier: 3.1.1
+      prettier: 3.2.1
     transitivePeerDependencies:
       - postcss
     dev: true
 
-  /prettier-plugin-import-sort@0.0.7(prettier@3.1.1):
+  /prettier-plugin-import-sort@0.0.7(prettier@3.2.1):
     resolution: {integrity: sha512-O0KlUSq+lwvh+UiN3wZDT6wWkf7TNxTVv2/XXE5KqpRNbFJq3nRg2ftzBYFFO8QGpdWIrOB0uCTCtFjIxmVKQw==}
     peerDependencies:
       prettier: '>= 2.0'
@@ -7252,12 +7255,12 @@ packages:
       import-sort-config: 6.0.0
       import-sort-parser-babylon: 6.0.0
       import-sort-parser-typescript: 6.0.0
-      prettier: 3.1.1
+      prettier: 3.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier-plugin-css-order@2.0.1)(prettier-plugin-import-sort@0.0.7)(prettier@3.1.1):
+  /prettier-plugin-tailwindcss@0.5.11(@ianvs/prettier-plugin-sort-imports@4.1.1)(prettier-plugin-css-order@2.0.1)(prettier-plugin-import-sort@0.0.7)(prettier@3.2.1):
     resolution: {integrity: sha512-AvI/DNyMctyyxGOjyePgi/gqj5hJYClZ1avtQvLlqMT3uDZkRbi4HhGUpok3DRzv9z7Lti85Kdj3s3/1CeNI0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -7306,14 +7309,14 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.1.1(prettier@3.1.1)
-      prettier: 3.1.1
-      prettier-plugin-css-order: 2.0.1(postcss@8.4.31)(prettier@3.1.1)
-      prettier-plugin-import-sort: 0.0.7(prettier@3.1.1)
+      '@ianvs/prettier-plugin-sort-imports': 4.1.1(prettier@3.2.1)
+      prettier: 3.2.1
+      prettier-plugin-css-order: 2.0.1(postcss@8.4.31)(prettier@3.2.1)
+      prettier-plugin-import-sort: 0.0.7(prettier@3.2.1)
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.1:
+    resolution: {integrity: sha512-qSUWshj1IobVbKc226Gw2pync27t0Kf0EdufZa9j7uBSJay1CC+B3K5lAAZoqgX3ASiKuWsk6OmzKRetXNObWg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -7490,8 +7493,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-icons@4.12.0(react@18.2.0):
-    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
+  /react-icons@5.0.1(react@18.2.0):
+    resolution: {integrity: sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==}
     peerDependencies:
       react: '*'
     dependencies:
@@ -7501,6 +7504,14 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
+
+  /react-loading-skeleton@3.3.1(react@18.2.0):
+    resolution: {integrity: sha512-NilqqwMh2v9omN7LteiDloEVpFyMIa0VGqF+ukqp0ncVlYu1sKYbYGX9JEl+GtOT9TKsh04zCHAbavnQ2USldA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-markdown@9.0.1(@types/react@18.2.37)(react@18.2.0):
     resolution: {integrity: sha512-186Gw/vF1uRkydbsOIkcGXw7aHq0sZOCRFFjGrr7b9+nVZg4UfA4enXCaxm4fUzecU38sWfrNDitGhshuU7rdg==}

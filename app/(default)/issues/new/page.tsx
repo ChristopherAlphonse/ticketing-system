@@ -66,7 +66,7 @@ export default function NewIssuePage() {
               {...register('title')}
               variant="classic"
               size="3"
-              placeholder="Title"
+              placeholder="Please give a title or subject of current issue"
               className="text-2xl tracking-normal m-2 "
             />
           </TextFieldRoot>
@@ -77,9 +77,10 @@ export default function NewIssuePage() {
             name="description"
             control={control}
             render={({ field }) => (
-              <>
-                <SimpleMdeReact placeholder="Description" {...field} />
-              </>
+              <SimpleMdeReact
+                placeholder="Please give a description to the issue happening with your machine"
+                {...field}
+              />
             )}
           />
 
@@ -91,10 +92,10 @@ export default function NewIssuePage() {
             className="mt-20 block w-full cursor-pointer rounded bg-blue-600 px-4 py-2 text-center font-semibold text-white hover:bg-blue-900 focus:outline-none focus:ring focus:ring-blue-800 focus:ring-opacity-80 focus:ring-offset-2 disabled:opacity-50"
           >
             {isSubmitting ? (
-              <div role="status">
+              <div>
                 <svg
                   aria-hidden="true"
-                  role="status"
+                  role="output"
                   className="inline w-4 h-4 me-3 text-white animate-spin"
                   viewBox="0 0 100 101"
                   fill="none"
