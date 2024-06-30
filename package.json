@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint  ",
     "format": "prettier . --write",
-    "up-all": "ncu -u && pnpm i",
+    "up-all": "ncu -u && yarn",
     "prisma-migrate": "npx prisma migrate dev",
     "prisma-format": " npx prisma format",
     "prisma-gen": "prisma generate"
