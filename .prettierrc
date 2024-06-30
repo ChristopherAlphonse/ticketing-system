@@ -7,10 +7,9 @@
   "singleQuote": true,
 
   "importOrder": [
+    "<THIRD_PARTY_MODULES>",
     "^(react/(.*)$)|^(react$)",
     "^(next/(.*)$)|^(next$)",
-    "<THIRD_PARTY_MODULES>",
-    "",
     "^types$",
     "^@/types/(.*)$",
     "^@/config/(.*)$",
@@ -21,7 +20,6 @@
     "^@/registry/(.*)$",
     "^@/styles/(.*)$",
     "^@/app/(.*)$",
-    "",
     "^[./]"
   ],
   "importOrderSeparation": false,
