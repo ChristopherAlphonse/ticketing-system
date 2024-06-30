@@ -16,7 +16,7 @@
   "dependencies": {
     "@aaaahoang123/react-simplemde-editor": "^5.2.4",
     "@hookform/resolvers": "^3.3.4",
-    "@next/eslint-plugin-next": "^14.1.0",
+    "@next/eslint-plugin-next": "^14.2.4",
     "@prisma/client": "5.8.1",
     "@radix-ui/themes": "^2.0.3",
     "@uiw/react-md-editor": "v4.0.3",
