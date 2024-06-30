@@ -29,13 +29,13 @@ To get started with Help Pilot, follow these steps:
 1. Install dependencies:
 
 ```bash
-pnpm i
+yarn i
 ```
 
 Run the development server:
 
 ```sh
-pnpm dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 To upgrade all packages to their latest versions, use the following command:
 
 ```sh
-pnpm up-all
+yarn up-all
 ```
 
 ### Database Operations
