@@ -1,34 +1,19 @@
 {
-  "endOfLine": "lf",
-  "semi": true,
-  "tabWidth": 2,
-  "trailingComma": "es5",
-  "printWidth": 100,
-  "singleQuote": true,
-
-  "importOrder": [
-    "^(react/(.*)$)|^(react$)",
-    "^(next/(.*)$)|^(next$)",
-    "<THIRD_PARTY_MODULES>",
-    "",
-    "^types$",
-    "^@/types/(.*)$",
-    "^@/config/(.*)$",
-    "^@/lib/(.*)$",
-    "^@/hooks/(.*)$",
-    "^@/components/ui/(.*)$",
-    "^@/components/(.*)$",
-    "^@/registry/(.*)$",
-    "^@/styles/(.*)$",
-    "^@/app/(.*)$",
-    "",
-    "^[./]"
-  ],
-  "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true,
-  "importOrderBuiltinModulesToTop": true,
-  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-  "importOrderMergeDuplicateImports": true,
-  "importOrderCombineTypeAndValueImports": true,
-  "plugins": ["@ianvs/prettier-plugin-sort-imports"]
+    "trailingComma": "all",
+    "singleQuote": true,
+    "semi": false,
+    "importOrder": [
+        "<THIRD_PARTY_MODULES>",
+        "^@/lib/(.*)$",
+        "^@/components/(.*)$",
+        "^@/app/(.*)$",
+        "^@/(.*)$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "tabWidth": 2,
+    "printWidth": 80,
+    "htmlWhitespaceSensitivity": "ignore",
+    "proseWrap": "always"
 }
