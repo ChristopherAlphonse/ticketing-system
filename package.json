@@ -22,7 +22,7 @@
   "dependencies": {
     "@aaaahoang123/react-simplemde-editor": "^5.2.4",
     "@hookform/resolvers": "^3.9.0",
-    "@next/eslint-plugin-next": "^14.2.4",
+    "@next/eslint-plugin-next": "^14.2.15",
     "@prisma/client": "5.18.0",
     "@radix-ui/themes": "^3.1.3",
     "@uiw/react-md-editor": "v4.0.4",
