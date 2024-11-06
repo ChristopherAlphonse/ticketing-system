@@ -34,7 +34,7 @@
     "i": "^0.3.7",
     "install": "^0.13.0",
     "mrm": "4",
-    "next": "14.2.5",
+    "next": "15.0.2",
     "next-remove-imports": "^1.0.12",
     "npm": "^10.8.1",
     "npm-check-updates": "^17.0.6",
